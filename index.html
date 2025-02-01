@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>이상형을 만날 확률은?</title>
+        <title>내 이상형을 만날 확률은?</title>
         <link rel="stylesheet" href="style.css" />
         <link
             rel="stylesheet"
@@ -13,38 +13,39 @@
         />
     </head>
     <body>
-        <h1>이상형을 만날 확률은?</h1>
-        <h2>
-            내가 찾는 이상형은 도대체 어디에 있는걸까요? 조건에 맞춰서 계산해보세요
-        </h3>
-        <!-- 성별 선택 -->
-        <div class="input">
-            <label for="genderSelect">성별 :</label>
-            <select id="genderSelect">
-                <option value="all">전체</option>
-                <option value="male">남자</option>
-                <option value="female">여자</option>
-            </select>
+        <div class="container">
+            <div class="header">
+                <h1>내 이상형을 만날 확률은?</h1>
+                <h2>원하는 모습으로 계산해보세요</h2>
+            </div>
+            <div class="inputForm">
+                <!-- 성별 선택 -->
+                <div class="input">
+                    <label for="genderSelect">성별 :</label>
+                    <select id="genderSelect">
+                        <option value="all">전체</option>
+                        <option value="male">남자</option>
+                        <option value="female">여자</option>
+                    </select>
+                </div>
+                <!-- 나이 입력 -->
+                <div class="input">
+                    <label>나이 (최소 - 최대) : <span>20 - 80</span></label>
+                    <div class="ageSlider"></div>
+                </div>
+                <!-- 키 입력 -->
+                <div class="input">
+                    <label>키 (최소 - 최대) : <span>120 - 220</span></label>
+                    <div class="heightSlider"></div>
+                </div>
+                <!-- 수입 입력 -->
+                <div class="input">
+                    <label>나이 (최소 - 최대) : <span>0 - 100억</span></label>
+                    <div class="incomeSlider"></div>
+                </div>
+            </div>
+            <button>계산하기</button>
         </div>
-
-        <!-- 나이 입력 -->
-        <div class="input">
-            <label>나이 (최소 - 최대) : <span>20 - 80</span></label>
-            <div class="ageSlider"></div>
-        </div>
-
-        <!-- 키 입력 -->
-        <div class="input">
-            <label>키 (최소 - 최대) : <span>120 - 220</span></label>
-            <div class="heightSlider"></div>
-        </div>
-
-        <!-- 수입 입력 -->
-        <div class="input">
-            <label>나이 (최소 - 최대) : <span>0 - 100억</span></label>
-            <div class="incomeSlider"></div>
-        </div>
-        <button>계산하기</button>
         <script src="script.js"></script>
     </body>
 </html>

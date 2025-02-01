@@ -10,6 +10,64 @@
 body {
     font-family: "CookieRun-Regular", sans-serif;
     background-color: #f2f4f6;
+    max-width: 560px;
     margin: auto;
-    width: 400px;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 32px;
+    border-radius: 24px;
+    margin: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+h1 {
+    font-size: 32px;
+    margin: 0px;
+}
+
+h2 {
+    color: #6a7282;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.inputForm {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+button {
+    background-color: #2b7fff;
+    height: 48px;
+    border-radius: 12px;
+    border: none;
+    font-family: "CookieRun-Regular", sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #51a2ff;
+    transform: scale(1.02);
+}
+
+button:active {
+    background-color: #2b7fff;
+    transform: scale(0.98);
 }
