@@ -1,7 +1,6 @@
 @font-face {
     font-family: "CookieRun-Regular";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff")
-        format("woff");
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
@@ -85,7 +84,24 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 24px;
+    gap: 32px;
+}
+
+.input {
+    display: flex;
+    gap: 16px;
+}
+
+input[type="range"] {
+    width: 200px;
+}
+
+.input label:first-child {
+    width: 50px;
+}
+
+.input label:last-child {
+    width: 120px;
 }
 
 button {

@@ -5,12 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>내 이상형을 만날 확률은?</title>
         <link rel="stylesheet" href="style.css" />
-        <link
-            rel="stylesheet"
-            as="style"
-            crossorigin
-            href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
-        />
+        <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
     </head>
     <body>
         <div class="container">
@@ -21,46 +16,33 @@
             <div class="inputForm">
                 <!-- 성별 선택 -->
                 <div class="segmentedControl">
-                    <input
-                        type="radio"
-                        id="genderAll"
-                        name="gender"
-                        value="all"
-                        checked
-                    />
+                    <input type="radio" id="genderAll" name="gender" value="all" checked />
                     <label for="genderAll">전체</label>
-                    <input
-                        type="radio"
-                        id="genderMale"
-                        name="gender"
-                        value="male"
-                    />
+                    <input type="radio" id="genderMale" name="gender" value="male" />
                     <label for="genderMale">남자</label>
-                    <input
-                        type="radio"
-                        id="genderFemale"
-                        name="gender"
-                        value="female"
-                    />
+                    <input type="radio" id="genderFemale" name="gender" value="female" />
                     <label for="genderFemale">여자</label>
                 </div>
 
                 <!-- 나이 입력 -->
                 <div class="input">
-                    <label>나이 (최소 - 최대) : <span>20 - 80</span></label>
-                    <div class="ageSlider"></div>
+                    <label>나이</label>
+                    <input type="range" min="20" max="80" step="1" />
+                    <label>20살 - 80살</label>
                 </div>
 
                 <!-- 키 입력 -->
                 <div class="input">
-                    <label>키 (최소 - 최대) : <span>120 - 220</span></label>
-                    <div class="heightSlider"></div>
+                    <label>키</label>
+                    <input type="range" min="120" max="220" step="1" />
+                    <label>120cm - 220cm</label>
                 </div>
 
                 <!-- 수입 입력 -->
                 <div class="input">
-                    <label>급여 (최소 - 최대) : <span>0 - 100억</span></label>
-                    <div class="incomeSlider"></div>
+                    <label>월 급여</label>
+                    <input type="range" min="0" max="100000000" step="500000" />
+                    <label>0원 - 10억원</label>
                 </div>
             </div>
             <button>계산하기</button>
