@@ -43,11 +43,49 @@ h2 {
     margin: 0px;
 }
 
+.segmentedControl {
+    background-color: #f2f4f6;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    padding: 0px 4px 0px 4px;
+    border-radius: 12px;
+}
+
+.segmentedControl input {
+    display: none;
+}
+
+.segmentedControl label {
+    font-size: 16px;
+    padding: 0px 24px 0px 24px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    color: #6a7282;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.segmentedControl label:hover {
+    color: #364153;
+}
+
+.segmentedControl input:checked + label {
+    background-color: #ffffff;
+    border-radius: 8px;
+    color: #030712;
+}
+
 .inputForm {
     font-size: 16px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    align-items: center;
+    gap: 24px;
 }
 
 button {

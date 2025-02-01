@@ -20,24 +20,43 @@
             </div>
             <div class="inputForm">
                 <!-- 성별 선택 -->
-                <div class="input">
-                    <label for="genderSelect">성별 :</label>
-                    <select id="genderSelect">
-                        <option value="all">전체</option>
-                        <option value="male">남자</option>
-                        <option value="female">여자</option>
-                    </select>
+                <div class="segmentedControl">
+                    <input
+                        type="radio"
+                        id="genderAll"
+                        name="gender"
+                        value="all"
+                        checked
+                    />
+                    <label for="genderAll">전체</label>
+                    <input
+                        type="radio"
+                        id="genderMale"
+                        name="gender"
+                        value="male"
+                    />
+                    <label for="genderMale">남자</label>
+                    <input
+                        type="radio"
+                        id="genderFemale"
+                        name="gender"
+                        value="female"
+                    />
+                    <label for="genderFemale">여자</label>
                 </div>
+
                 <!-- 나이 입력 -->
                 <div class="input">
                     <label>나이 (최소 - 최대) : <span>20 - 80</span></label>
                     <div class="ageSlider"></div>
                 </div>
+
                 <!-- 키 입력 -->
                 <div class="input">
                     <label>키 (최소 - 최대) : <span>120 - 220</span></label>
                     <div class="heightSlider"></div>
                 </div>
+
                 <!-- 수입 입력 -->
                 <div class="input">
                     <label>급여 (최소 - 최대) : <span>0 - 100억</span></label>
