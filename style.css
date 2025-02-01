@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "CookieRun-Regular";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+body {
+    font-family: "CookieRun-Regular", sans-serif;
+    background-color: #f2f4f6;
+    margin: auto;
+    width: 400px;
+}
