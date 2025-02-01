@@ -94,15 +94,11 @@ h2 {
 }
 
 input[type="range"] {
-    width: 200px;
+    width: 100%;
 }
 
-.input label:first-child {
-    width: 50px;
-}
-
-.input label:last-child {
-    width: 120px;
+.input label {
+    white-space: nowrap;
 }
 
 button {
