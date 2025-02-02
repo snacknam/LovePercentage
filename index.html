@@ -28,21 +28,32 @@
                 <!-- 나이 입력 -->
                 <div class="input">
                     <label>나이</label>
-                    <input type="range" min="20" max="80" step="1" />
+                    <div class="slider">
+                        <div class="middle">
+                            <div class="rangeSlider">
+                                <input type="range" id="inputLeft" min="20" max="80" value="35" />
+                                <input type="range" id="inputRight" min="20" max="80" value="65" />
+                                <div class="fakeSlider">
+                                    <div class="track"></div>
+                                    <div class="range"></div>
+                                    <div class="thumb left"></div>
+                                    <div class="thumb right"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <label>20살 - 80살</label>
                 </div>
 
                 <!-- 키 입력 -->
                 <div class="input">
                     <label>키</label>
-                    <input type="range" min="120" max="220" step="1" />
                     <label>120cm - 220cm</label>
                 </div>
 
                 <!-- 수입 입력 -->
                 <div class="input">
                     <label>월 급여</label>
-                    <input type="range" min="0" max="100000000" step="500000" />
                     <label>0원 - 10억원</label>
                 </div>
             </div>
