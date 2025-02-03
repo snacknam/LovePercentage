@@ -85,38 +85,55 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 48px;
+    margin-bottom: 16px;
 }
 
 .input {
     display: flex;
-    gap: 16px;
-    width: 100%;
-}
-
-.slider {
-    display: flex;
-    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    gap: 16px;
+}
+
+.input-info {
+    display: flex;
+    font-size: 16px;
+    gap: 16px;
+}
+
+.input-label {
+    color: #6b7280;
+    font-size: 16px;
+}
+
+.input-value {
+    font-size: 16px;
+}
+
+.input-slider {
+    flex: 1;
     width: 100%;
 }
 
-.middle {
+/* 기존 .middle, .slider 관련 스타일은 삭제 또는 통합 */
+.rangeSlider {
     position: relative;
-    width: 50%;
     width: 100%;
 }
 
+/* fakeSlider 내부 요소 */
 .fakeSlider {
     position: relative;
     z-index: 1;
     height: 8px;
-    margin: 0px 8px;
+    margin: 0 8px;
 }
 
 .fakeSlider > .track {
     position: absolute;
-    z-index: 1;
     left: 0;
     right: 0;
     top: 0;
@@ -127,13 +144,12 @@ h2 {
 
 .fakeSlider > .range {
     position: absolute;
-    z-index: 2;
     left: 25%;
     right: 25%;
     top: 0;
     bottom: 0;
     border-radius: 4px;
-    background-color: #2b7fff;
+    background-color: #22c55e;
 }
 
 .fakeSlider > .thumb {
@@ -141,7 +157,7 @@ h2 {
     z-index: 3;
     width: 16px;
     height: 16px;
-    background-color: #2b7fff;
+    background-color: #22c55e;
     border-radius: 50%;
 }
 
@@ -179,12 +195,8 @@ input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
 }
 
-.input label {
-    white-space: nowrap;
-}
-
 button {
-    background-color: #2b7fff;
+    background-color: #22c55e;
     height: 48px;
     border-radius: 12px;
     border: none;
@@ -196,11 +208,11 @@ button {
 }
 
 button:hover {
-    background-color: #51a2ff;
+    background-color: #4ade80;
     transform: scale(1.02);
 }
 
 button:active {
-    background-color: #2b7fff;
+    background-color: #22c55e;
     transform: scale(0.98);
 }

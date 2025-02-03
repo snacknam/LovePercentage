@@ -27,38 +27,67 @@
 
                 <!-- 나이 입력 -->
                 <div class="input">
-                    <label>나이</label>
-                    <div class="slider">
-                        <div class="middle">
-                            <div class="rangeSlider">
-                                <input type="range" id="inputLeft" min="20" max="80" value="35" />
-                                <input type="range" id="inputRight" min="20" max="80" value="65" />
-                                <div class="fakeSlider">
-                                    <div class="track"></div>
-                                    <div class="range"></div>
-                                    <div class="thumb left"></div>
-                                    <div class="thumb right"></div>
-                                </div>
+                    <div class="input-info">
+                        <span class="input-label">나이</span>
+                        <span class="input-value"><span id="ageMin">32</span>살 - <span id="ageMax">67</span>살</span>
+                    </div>
+                    <div class="input-slider">
+                        <div class="rangeSlider" id="ageRangeSlider">
+                            <input type="range" id="ageLeft" min="20" max="79" value="32" />
+                            <input type="range" id="ageRight" min="20" max="79" value="67" />
+                            <div class="fakeSlider" id="ageFakeSlider">
+                                <div class="track"></div>
+                                <div class="range"></div>
+                                <div class="thumb left"></div>
+                                <div class="thumb right"></div>
                             </div>
                         </div>
                     </div>
-                    <label>20살 - 80살</label>
                 </div>
 
                 <!-- 키 입력 -->
                 <div class="input">
-                    <label>키</label>
-                    <label>120cm - 220cm</label>
+                    <div class="input-info">
+                        <span class="input-label">키</span>
+                        <span class="input-value"><span id="heightMin">140</span>cm - <span id="heightMax">200</span>cm</span>
+                    </div>
+                    <div class="input-slider">
+                        <div class="rangeSlider" id="heightRangeSlider">
+                            <input type="range" id="heightLeft" min="120" max="220" value="140" />
+                            <input type="range" id="heightRight" min="120" max="220" value="200" />
+                            <div class="fakeSlider" id="heightFakeSlider">
+                                <div class="track"></div>
+                                <div class="range"></div>
+                                <div class="thumb left"></div>
+                                <div class="thumb right"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- 수입 입력 -->
+                <!-- 월 급여 입력 -->
                 <div class="input">
-                    <label>월 급여</label>
-                    <label>0원 - 10억원</label>
+                    <div class="input-info">
+                        <span class="input-label">월 급여</span>
+                        <span class="input-value"> <span id="salaryMin">200만원</span> - <span id="salaryMax">800만원</span> </span>
+                    </div>
+                    <div class="input-slider">
+                        <div class="rangeSlider" id="salaryRangeSlider">
+                            <input type="range" id="salaryLeft" min="0" max="10000000" step="500000" value="2000000" />
+                            <input type="range" id="salaryRight" min="0" max="10000000" step="500000" value="8000000" />
+                            <div class="fakeSlider" id="salaryFakeSlider">
+                                <div class="track"></div>
+                                <div class="range"></div>
+                                <div class="thumb left"></div>
+                                <div class="thumb right"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <button>계산하기</button>
         </div>
-        <script src="script.js"></script>
+        <script src="script/script.js"></script>
+        <script src="script/slider.js"></script>
     </body>
 </html>
